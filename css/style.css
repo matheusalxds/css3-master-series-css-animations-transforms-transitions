@@ -2,9 +2,36 @@
   margin: 0;
   padding: 0; }
 
+.fade-container {
+  height: 75%;
+  width: 100%;
+  background-image: url(../img/paris.jpeg);
+  background-position: 0;
+  transition: all 1s; }
+  .fade-container__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    transition: all .5s; }
+  .fade-container:hover {
+    background-position: 100%; }
+  .fade-container:hover .fade-container__text {
+    opacity: 1; }
+  .fade-container h1 {
+    font-size: 3em;
+    padding: 20px; }
+  .fade-container p {
+    width: 50%; }
+
 .gradient-container {
   font-family: 'Atomic Age', cursive;
   height: 500px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,3 +51,9 @@
   transition: color .3s;
   color: #108dc7;
   transition: color 1s; }
+
+.section-gradient,
+.section-fade {
+  display: flex;
+  align-items: center;
+  height: 100vh; }

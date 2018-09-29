@@ -1,0 +1,42 @@
+.fade-container {
+  height: 75%;
+  width: 100%;
+
+  background-image: url(../img/paris.jpeg);
+  background-position: 0;
+
+  transition: all 1s;
+
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Axis X
+    justify-content: center; // Axis X
+
+    color: #ffffff;
+
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+
+    transition: all .5s;
+  }
+
+  &:hover {
+    background-position: 100%;
+  }
+
+  &:hover &__text {
+    opacity: 1;
+  }
+
+  h1 {
+    font-size: 3em;
+    padding: 20px;
+  }
+
+  p {
+    width: 50%;
+  }
+}
