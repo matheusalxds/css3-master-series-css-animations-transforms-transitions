@@ -13,7 +13,7 @@
   background: linear-gradient(to right, #ef8e38, #108dc7);
   background-size: 200%;
   background-position: 0%;
-  transition: background-position .3s, background-size .5s; }
+  transition: background-position .6s, background-size .5s; }
   .gradient-container:hover {
     background-position: 100%; }
   .gradient-container:hover > .heading-1 {
