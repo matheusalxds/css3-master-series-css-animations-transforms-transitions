@@ -1,8 +1,14 @@
 .section-gradient,
-.section-fade {
+.section-fade,
+.section-btn-hover {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 10rem;
+}
+
+.section-btn-hover {
+  background-color: teal;
+  padding: 30px;
 }
