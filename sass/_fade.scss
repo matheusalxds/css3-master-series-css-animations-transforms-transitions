@@ -1,12 +1,11 @@
 .fade-container {
-  height: 75%;
+  height: 50rem;
   width: 100%;
 
   background-image: url(../img/paris.jpeg);
   background-position: 0;
 
   transition: all 1s;
-
 
   &__text {
     display: flex;
