@@ -3,7 +3,7 @@
   padding: 0; }
 
 .fade-container {
-  height: 75%;
+  height: 50rem;
   width: 100%;
   background-image: url(../img/paris.jpeg);
   background-position: 0;
@@ -56,4 +56,38 @@
 .section-fade {
   display: flex;
   align-items: center;
-  height: 100vh; }
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10rem; }
+
+.cards-container {
+  padding: 20px;
+  text-align: center; }
+  .cards-container__btn {
+    padding: 20px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    outline: none; }
+  .cards-container__cards {
+    display: flex;
+    padding: 20px;
+    cursor: pointer; }
+  .cards-container__btn:hover ~ .card {
+    opacity: 1; }
+
+.card {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  opacity: 0;
+  transition: opacity .5s; }
+  .card:first-child {
+    transition-delay: .2s; }
+  .card:last-child {
+    transition-delay: .4s; }
+  .card__img {
+    width: 200px;
+    height: auto; }
