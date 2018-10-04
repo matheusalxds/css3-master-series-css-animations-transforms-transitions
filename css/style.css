@@ -362,7 +362,8 @@
 .section-fade,
 .section-btn-hover,
 .section-transform,
-.section-transform-content {
+.section-transform-content,
+.section-transform-translate {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,7 +372,8 @@
   .section-fade:not(:last-child),
   .section-btn-hover:not(:last-child),
   .section-transform:not(:last-child),
-  .section-transform-content:not(:last-child) {
+  .section-transform-content:not(:last-child),
+  .section-transform-translate:not(:last-child) {
     padding: 10rem 0; }
 
 .section-btn-hover {
@@ -445,7 +447,6 @@
     background-color: rgba(0, 0, 0, 0.3);
     border: solid 1px rgba(0, 0, 0, 0.1);
     /*
-
     Code to straighten the text
 
     &:nth-child(2n+1) .section-transform-content__p {
@@ -462,3 +463,30 @@
   .section-transform-content__p {
     font-size: 1.1em;
     padding: 20px; }
+
+.section-transform-translate__wrapper {
+  width: 40%;
+  position: relative;
+  background-color: grey;
+  overflow: hidden; }
+  .section-transform-translate__wrapper h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 20px; }
+  .section-transform-translate__wrapper p {
+    padding: 20px; }
+
+.section-transform-translate__wrapper:hover .section-transform-translate__hover {
+  transform: translateX(0); }
+
+.section-transform-translate__main {
+  background-color: #ef8e38; }
+
+.section-transform-translate__hover {
+  background-color: #108dc7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.5s cubic-bezier(0, 0.01, 1, -0.07);
+  transform: translateX(-580px); }

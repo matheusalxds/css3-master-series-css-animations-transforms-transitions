@@ -100,7 +100,6 @@
     }
 
     /*
-
     Code to straighten the text
 
     &:nth-child(2n+1) .section-transform-content__p {
@@ -115,5 +114,42 @@
   &__p {
     font-size: 1.1em;
     padding: 20px;
+  }
+}
+
+.section-transform-translate {
+  &__wrapper {
+    width: 40%;
+    position: relative;
+    background-color: grey;
+    overflow: hidden;
+
+    h2 {
+      font-size: 2em;
+      text-align: center;
+      padding: 20px;
+    }
+
+    p {
+      padding: 20px;
+    }
+  }
+
+  &__wrapper:hover &__hover {
+    transform: translateX(0);
+  }
+
+  &__main {
+    background-color: #ef8e38;
+  }
+
+  &__hover {
+    background-color: #108dc7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform .5s cubic-bezier(0,.01,1,-0.07);
+    transform: translateX(-580px);
   }
 }
