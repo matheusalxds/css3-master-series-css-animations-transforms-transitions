@@ -1,17 +1,26 @@
 .section-gradient,
 .section-fade,
 .section-btn-hover,
-.section-transform {
+.section-transform,
+.section-transform-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 10rem;
+
+  &:not(:last-child) {
+    padding: 10rem 0;
+  }
 }
 
 .section-btn-hover {
   background-color: teal;
   padding: 30px;
+}
+
+.section-transform-content {
+  background-color: crimson;
+  //height: 100vh;
 }
 
 .row {
