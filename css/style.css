@@ -1,101 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
-
-.fade-container {
-  height: 50rem;
-  width: 100%;
-  background-image: url(../img/paris.jpeg);
-  background-position: 0;
-  transition: all 1s; }
-  .fade-container__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    transition: all .5s; }
-  .fade-container:hover {
-    background-position: 100%; }
-  .fade-container:hover .fade-container__text {
-    opacity: 1; }
-  .fade-container h1 {
-    font-size: 3em;
-    padding: 20px; }
-  .fade-container p {
-    width: 50%; }
-
-.gradient-container {
-  font-family: 'Atomic Age', cursive;
-  height: 500px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #108dc7;
-  background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);
-  background: linear-gradient(to right, #ef8e38, #108dc7);
-  background-size: 200%;
-  background-position: 0%;
-  transition: background-position .6s, background-size .5s; }
-  .gradient-container:hover {
-    background-position: 100%; }
-  .gradient-container:hover > .heading-1 {
-    color: #ef8e38; }
-
-.heading-1 {
-  font-size: 60px;
-  transition: color .3s;
-  color: #108dc7;
-  transition: color 1s; }
-
-.section-gradient,
-.section-fade,
-.section-btn-hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 10rem; }
-
-.section-btn-hover {
-  background-color: teal;
-  padding: 30px; }
-
-.cards-container {
-  padding: 20px;
-  text-align: center; }
-  .cards-container__btn {
-    padding: 20px;
-    border: none;
-    background-color: rebeccapurple;
-    color: white;
-    cursor: pointer;
-    outline: none; }
-  .cards-container__cards {
-    display: flex;
-    padding: 20px;
-    cursor: pointer; }
-  .cards-container__btn:hover ~ .card {
-    opacity: 1; }
-
-.card {
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  opacity: 0;
-  transition: opacity .5s; }
-  .card:first-child {
-    transition-delay: .2s; }
-  .card:last-child {
-    transition-delay: .4s; }
-  .card__img {
-    width: 200px;
-    height: auto; }
+  padding: 0;
+  box-sizing: inherit; }
 
 .btn {
   padding: 20px;
@@ -369,3 +275,133 @@
       height: 300%; }
     .btn__12:hover {
       color: teal; }
+
+.cards-container {
+  padding: 20px;
+  text-align: center; }
+  .cards-container__btn {
+    padding: 20px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    outline: none; }
+  .cards-container__cards {
+    display: flex;
+    padding: 20px;
+    cursor: pointer; }
+  .cards-container__btn:hover ~ .card {
+    opacity: 1; }
+
+.card {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  opacity: 0;
+  transition: opacity .5s; }
+  .card:first-child {
+    transition-delay: .2s; }
+  .card:last-child {
+    transition-delay: .4s; }
+  .card__img {
+    width: 200px;
+    height: auto; }
+
+.fade-container {
+  height: 50rem;
+  width: 100%;
+  background-image: url(../img/paris.jpeg);
+  background-position: 0;
+  transition: all 1s; }
+  .fade-container__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    transition: all .5s; }
+  .fade-container:hover {
+    background-position: 100%; }
+  .fade-container:hover .fade-container__text {
+    opacity: 1; }
+  .fade-container h1 {
+    font-size: 3em;
+    padding: 20px; }
+  .fade-container p {
+    width: 50%; }
+
+.gradient-container {
+  font-family: 'Atomic Age', cursive;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #108dc7;
+  background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);
+  background: linear-gradient(to right, #ef8e38, #108dc7);
+  background-size: 200%;
+  background-position: 0%;
+  transition: background-position .6s, background-size .5s; }
+  .gradient-container:hover {
+    background-position: 100%; }
+  .gradient-container:hover > .heading-1 {
+    color: #ef8e38; }
+
+.heading-1 {
+  font-size: 60px;
+  transition: color .3s;
+  color: #108dc7;
+  transition: color 1s; }
+
+.section-gradient,
+.section-fade,
+.section-btn-hover,
+.section-transform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10rem; }
+
+.section-btn-hover {
+  background-color: teal;
+  padding: 30px; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.section-transform__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.section-transform__img {
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+  .section-transform__img--1 {
+    transition: transform 0.4s cubic-bezier(0.59, -0.39, 0.13, 1.48); }
+    .section-transform__img--1:hover {
+      transform: scale(1.2); }
+  .section-transform__img--2 {
+    transition: transform .4s;
+    transform: scale(1.2) rotate(10deg); }
+    .section-transform__img--2:hover {
+      transform: scale(1) rotate(0); }
+
+.section-transform__content {
+  width: 250px;
+  height: 250px; }
+  .section-transform__content--overflow {
+    overflow: hidden; }
+  .section-transform__content:not(:last-child) {
+    margin-bottom: 1rem; }
