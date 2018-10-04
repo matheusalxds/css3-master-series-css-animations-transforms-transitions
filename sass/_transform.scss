@@ -28,6 +28,35 @@
         transform: scale(1) rotate(0);
       }
     }
+
+    &--3 {
+      transition: transform .4s;
+      transform-origin: top left;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &--4 {
+      transition: transform .4s, filter .7s;
+      transform-origin: top;
+
+      &:hover {
+        transform: scale(2);
+        filter: blur(2px);
+      }
+    }
+
+    &--5 {
+      transition: transform .3s, filter .5s .3s;
+      transform: scale(1) rotate(0);
+
+      &:hover {
+        transform: scale(1.5) rotate(10deg);
+        filter: grayscale(100%);
+      }
+    }
   }
 
   &__content {

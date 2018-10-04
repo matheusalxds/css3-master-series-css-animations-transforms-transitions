@@ -397,6 +397,23 @@
     transform: scale(1.2) rotate(10deg); }
     .section-transform__img--2:hover {
       transform: scale(1) rotate(0); }
+  .section-transform__img--3 {
+    transition: transform .4s;
+    transform-origin: top left; }
+    .section-transform__img--3:hover {
+      transform: scale(1.1); }
+  .section-transform__img--4 {
+    transition: transform .4s, filter .7s;
+    transform-origin: top; }
+    .section-transform__img--4:hover {
+      transform: scale(2);
+      filter: blur(2px); }
+  .section-transform__img--5 {
+    transition: transform .3s, filter .5s .3s;
+    transform: scale(1) rotate(0); }
+    .section-transform__img--5:hover {
+      transform: scale(1.5) rotate(10deg);
+      filter: grayscale(100%); }
 
 .section-transform__content {
   width: 250px;
