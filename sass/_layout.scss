@@ -1,6 +1,7 @@
 .section-gradient,
 .section-fade,
-.section-btn-hover {
+.section-btn-hover,
+.section-transform {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,4 +12,9 @@
 .section-btn-hover {
   background-color: teal;
   padding: 30px;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
 }
