@@ -1,0 +1,81 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  &__main,
+  &__sec {
+    background-color: crimson;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__sec {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  }
+
+  &__list {
+    list-style: none;
+
+    &--horizontal {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    padding: 30px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  right: -55px;
+  background-color: rgba(0, 0, 0, .1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  min-height: 40px;
+  width: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    background-color: #ffffff;
+    width: 40px;
+    height: 3px;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 3px;
+      width: 40px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      content: '';
+      height: 3px;
+      width: 40px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      background-color: #ffffff;
+    }
+  }
+}
